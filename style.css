@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #ffffff;
+    --accent-color: #e70611;
+    --accent-color-dark: #c11119;
+    --primary-bg-color: #232323;
+    --secondary-bg-color: #2d2d2d;
+    --other-bg-color: #555555;
+    --padding-inline-section: 30px;
+
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-text-color);
+    background-color: #000000;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+
+h2 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    color: var(--primary-text-color);
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+/* utility class */
+
+.flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1400px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+.secondary-button {
+    border: 0.5px solid var(--other-bg-color);
+    font-weight: 500;
+    border-radius: 6px;
+    padding: 8px 20px;
+    transition: 0.2s ease-out;
+    color: var(--primery-text-color);
+}
+
+.primary-button {
+    padding: 9px 26px;
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    transition: 0.2s ease-out;
+}
+
+.primary-button:hover {
+    background-color: var(--accent-color-dark);
+}
+
+/* nav section */
+
+.main-nav {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 85px;
+}
+
+.nav-links ul {
+    gap: 30px;
+}
+
+nav {
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/bg-1.jpg");
+    background-size: cover;
+}
+
+.header-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.header-section {
+    margin-top: 180px;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-input {
+    gap: 10px;
+}
+
+.nav-input input {
+    width: 400px;
+    height: 60px;
+    border-radius: 4px;
+    border: 2px solid var(--other-bg-color);
+    background: rgba(26, 26, 26, 0.721);
+    padding: 15px;
+    font-size: medium;
+    color: var(--primary-text-color);
+}
+
+.nav-input a {
+    padding: 13px 25px;
+}
+
+hr {
+    border-style: none;
+    height: 10px;
+    background-color: var(--secondary-bg-color);
+}
+
+/* big-features-sections */
+
+.big-features-sections {
+    gap: 20px;
+    padding: 80px 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* question-section */
+
+.question-section {
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-container {
+    padding: 80px;
+    padding-bottom: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.qustions {
+    background-color: #2d2d2d;
+    width: 1300px;
+    height: 100px;
+    padding: 40px;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+    justify-content: space-between;
+}
+
+.qustions:hover {
+    background-color: #4d4d4d;
+}
+
+.question-section-cards {
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.header-section-second {
+    padding-top: 60px;
+    padding-bottom: 70px;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+/* footer-section */
+
+footer{
+    height: 100px;
+}
+.footer-list ul{
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 40px;
+}
+.hover-link{
+    list-style: none;
+    color:var(--other-bg-color);
+    font-size: 1.1rem;
+}
